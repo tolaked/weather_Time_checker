@@ -1,0 +1,24 @@
+{
+  "name": "weather_time_checker",
+  "version": "1.0.0",
+  "description": "Given an array of inputs (location name, postal code), log the current time and weather for those locations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolaked/weather_Time_checker.git"
+  },
+  "author": "Adetola Akere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tolaked/weather_Time_checker/issues"
+  },
+  "homepage": "https://github.com/tolaked/weather_Time_checker#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  }
+}

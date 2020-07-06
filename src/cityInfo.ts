@@ -14,15 +14,25 @@ function getweather(cityName: string): Object {
       )
       // the JSON body is taken from the response
       .then((res) => {
-        const result = {
+        if(res.data.success === false){
+          console.log('please provide a valid location')
+         
+      }
+      else{
+        result = {
           time: res.data.location.localtime.split(" ")[1],
           weather: res.data.current.weather_descriptions[0],
         } as CityInfo
 
         console.log(result);
+      }
         
+      })
+
+      .catch(err=>{
+        console.log(err)
       })
   )
 }
 
-getweather("ajax");
+getweather("lagos");
